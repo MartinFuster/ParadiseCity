@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Gallery from "./Gallery";
+import Overview from "./Overview";
 import user1 from "../img/user-3.jpg";
 import user2 from "../img/user-4.jpg";
 import user3 from "../img/user-5.jpg";
@@ -12,28 +13,7 @@ function Main() {
   return (
     <main className="hotel-view">
       <Gallery />
-      <div className="overview">
-        <h1 className="overview__heading">Hotel Las Palmas</h1>
-
-        <div className="overview__stars">
-          <FontAwesomeIcon icon="star" className="overview__icon-star" />
-          <FontAwesomeIcon icon="star" className="overview__icon-star" />
-          <FontAwesomeIcon icon="star" className="overview__icon-star" />
-          <FontAwesomeIcon icon="star" className="overview__icon-star" />
-          <FontAwesomeIcon icon="star" className="overview__icon-star" />
-        </div>
-        <div className="overview__location">
-          <FontAwesomeIcon
-            icon="map-marker-alt"
-            className="overview__icon-location"
-          />
-          <button className="btn-inline">Albufeira, Portugal</button>
-        </div>
-        <div className="overview__rating">
-          <div className="overview__rating-average">8.6</div>
-          <div className="overview__rating-count">429 votes</div>
-        </div>
-      </div>
+      <Overview />
       <div className="detail">
         <div className="description">
           <p className="paragraph">
