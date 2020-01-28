@@ -8,7 +8,7 @@ function Copyright() {
   return (
     <div className="legal">
       <FontAwesomeIcon icon="copyright" />
-      {year} by Martin Fuster. All rights reserved.
+      &nbsp; {year} by Martin Fuster. All rights reserved.
     </div>
   );
 }
