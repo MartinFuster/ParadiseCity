@@ -14,7 +14,10 @@ import {
   faPlaneDeparture,
   faCopyright,
   faStar,
-  faMapMarkerAlt
+  faMapMarkerAlt,
+  faChevronRight,
+  faLongArrowAltRight,
+  faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -28,7 +31,10 @@ library.add(
   faPlaneDeparture,
   faCopyright,
   faStar,
-  faMapMarkerAlt
+  faMapMarkerAlt,
+  faChevronRight,
+  faLongArrowAltRight,
+  faArrowRight
 );
 
 function App() {
