@@ -1,14 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Gallery from "./Gallery";
 import Overview from "./Overview";
 import Detail from "./Detail";
-import user1 from "../img/user-3.jpg";
-import user2 from "../img/user-4.jpg";
-import user3 from "../img/user-5.jpg";
-import user4 from "../img/user-6.jpg";
-import user5 from "../img/user-1.jpg";
-import user6 from "../img/user-2.jpg";
 
 function Main() {
   return (
