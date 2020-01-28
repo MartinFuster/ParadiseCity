@@ -1,8 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import img1 from "../img/hotel-1.jpg";
-import img2 from "../img/hotel-2.jpg";
-import img3 from "../img/hotel-3.jpg";
+import Gallery from "./Gallery";
 import user1 from "../img/user-3.jpg";
 import user2 from "../img/user-4.jpg";
 import user3 from "../img/user-5.jpg";
@@ -13,17 +11,7 @@ import user6 from "../img/user-2.jpg";
 function Main() {
   return (
     <main className="hotel-view">
-      <div className="gallery">
-        <figure className="gallery__item">
-          <img src={img1} alt="Hotel picture 1" className="gallery__photo" />
-        </figure>
-        <figure className="gallery__item">
-          <img src={img2} alt="Hotel picture 2" className="gallery__photo" />
-        </figure>
-        <figure className="gallery__item">
-          <img src={img3} alt="Hotel picture 3" className="gallery__photo" />
-        </figure>
-      </div>
+      <Gallery />
       <div className="overview">
         <h1 className="overview__heading">Hotel Las Palmas</h1>
 
