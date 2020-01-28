@@ -117,12 +117,19 @@
 
   &__item {
     position: relative;
+    transition: all 0.2s;
 
-    &:not(:last-child) {
-      margin-bottom: 0.5rem;
+    &:hover {
+      background-color: var(--color-primary);
+    }
+
+    &:active {
+      background-color: var(--color-primary-light);
     }
   }
 
+  /*
+  BUTTON ANIMATION (OPTIONAL)
   &__item::before {
     content: "";
     position: absolute;
@@ -135,6 +142,7 @@
     transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
       background-color 0.1s;
   }
+  
   &__item:hover::before,
   &__item--active::before {
     transform: scaleY(1);
@@ -144,6 +152,7 @@
   &__item:active::before {
     background-color: var(--color-primary-dark);
   }
+  */
 
   &__link:link,
   &__link:visited {
@@ -156,6 +165,10 @@
 
     display: flex;
     align-items: center;
+  }
+
+  &__selected {
+    background-color: var(--color-primary);
   }
 
   &__icon {
