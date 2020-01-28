@@ -168,6 +168,12 @@ function Main() {
           </button>
         </div>
       </div>
+      <div className="cta">
+        <h2 className="cta__book-now">
+          Good news! we have 4 rooms left for your selected dates!
+        </h2>
+        <button className="btn">Book now</button>
+      </div>
     </main>
   );
 }
