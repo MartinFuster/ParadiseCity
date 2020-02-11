@@ -11,7 +11,7 @@ function Main() {
       <Overview />
       <Detail />
       <CTA
-        heading="Good news! we have 4 rooms left for your selected dates!"
+        heading="Good news! we have 4 rooms left for you"
         buttonText="Book now"
       />
     </main>

@@ -11,6 +11,10 @@
 .content {
   display: flex;
   background-color: #fff;
+
+  @include media(tab) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -31,6 +35,14 @@
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+
+  @include media(tab) {
+    padding: 3rem;
+  }
+
+  @include media(phone) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -39,6 +51,16 @@
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  @include media(tab) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @include media(phone) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 .user-reviews {
@@ -46,4 +68,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home-features {
+  margin-bottom: 1rem;
 }

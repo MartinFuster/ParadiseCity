@@ -15,7 +15,6 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
-
 :root {
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
@@ -36,6 +35,63 @@ Grey dark 3: #999
   --line: 0.1rem solid var(--color-grey-light-2);
 }
 
+/* MIXINS
+Breakpoints:
+tab-port =  < 966px
+tab = < 900px
+phone = < 600px
+*/
+@mixin media($breakpoint) {
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 60.375em) {
+      @content;
+      //966px
+    }
+  }
+
+  @if $breakpoint == tab {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+      //900px
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+      //600px
+    }
+  }
+
+  @if $breakpoint == phone-medium {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+      //500px
+    }
+  }
+
+  @if $breakpoint == phone-415 {
+    @media only screen and (max-width: 25.9375em) {
+      @content;
+      //415px
+    }
+  }
+
+  @if $breakpoint == phone-350 {
+    @media only screen and (max-width: 21.875em) {
+      @content;
+      //350px
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 143.75em) {
+      @content;
+      //2300px
+    }
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +106,14 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @include media(tab-port) {
+    font-size: 50%;
+  }
+
+  @include media(big-desktop) {
+    font-size: 120%;
+  }
 }
 
 body {

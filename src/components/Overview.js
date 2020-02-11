@@ -9,7 +9,7 @@ function Overview() {
 
   return (
     <div className="overview">
-      <HotelName hotel="Hotel las palmas" />
+      <HotelName hotel="las palmas" />
       <Stars stars={stars} />
       <Location location="Albufeira, Portugal" />
       <Rating rating="8.6" votes="429" />

@@ -18,22 +18,33 @@
     background-color: var(--color-grey-light-2);
     border: none;
     color: inherit;
-    padding: 0.7rem 0.2rem;
+    padding: 0.7rem 3rem;
     border-radius: 10rem;
-    width: 90%;
-    transition: all 0.2s;
+    width: 80%;
+    transition: all 0.3s;
     margin-right: -3.5rem;
 
     &:focus {
       outline: none;
-      width: 100%;
+      width: 90%;
       background-color: var(--color-grey-light-3);
     }
 
     &::-webkit-input-placeholder {
       font-weight: 100;
       color: var(--color-grey-dark-3);
-      padding: 2rem;
+
+      @include media(phone-medium) {
+        font-size: 1.2rem;
+      }
+
+      @include media(phone-415) {
+        font-size: 1.1rem;
+      }
+
+      @include media(phone-350) {
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -75,6 +86,10 @@
     height: 100%;
     display: flex;
     align-items: center;
+
+    @include media(phone-350) {
+      padding: 0 1rem;
+    }
   }
 
   & > *:hover {
@@ -94,6 +109,10 @@
     font-size: 2.25rem;
     color: var(--color-grey-dark-3);
     transition: all 0.2s;
+
+    @include media(phone-415) {
+      margin-right: 0;
+    }
   }
 
   &__user-photo {
@@ -105,6 +124,10 @@
   &__user-name {
     font-size: 1.5rem;
     color: var(--color-grey-dark-2);
+
+    @include media(phone-medium) {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -115,9 +138,22 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @include media(tab) {
+    display: flex;
+    margin: 0;
+  }
+
+  @include media(phone-415) {
+    font-size: 1.2rem;
+  }
+
   &__item {
     position: relative;
     transition: all 0.2s;
+
+    @include media(tab) {
+      flex: 1;
+    }
 
     &:hover {
       background-color: var(--color-primary);
@@ -165,6 +201,15 @@
 
     display: flex;
     align-items: center;
+
+    @include media(tab) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @include media(phone-medium) {
+      padding: 1.4rem;
+    }
   }
 
   &__selected {
@@ -185,15 +230,24 @@
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+
+  @include media(tab) {
+    display: none;
+  }
 }
 
 // GALLERY
+
+figure {
+  margin: 0;
+}
 
 .gallery {
   display: flex;
 
   &__photo {
     width: 100%;
+    height: 22.5rem;
     display: block;
   }
 }
@@ -210,6 +264,26 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     padding: 1.5rem 3rem;
+    margin: 0;
+
+    @include media(phone) {
+      font-size: 1.8rem;
+      padding: 1.25 2rem;
+    }
+
+    @include media(phone-medium) {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    @include media(phone-415) {
+      padding: 1.5rem 1rem;
+      letter-spacing: 0;
+    }
+
+    @include media(phone-350) {
+      padding: 1.5rem 0.5rem;
+    }
   }
   &__stars {
     margin-right: auto;
@@ -219,6 +293,10 @@
   &__icon-location {
     font-size: 1.75rem;
     color: var(--color-primary);
+
+    @include media(phone-medium) {
+      font-size: 1.2rem;
+    }
   }
 
   &__location {
@@ -229,6 +307,14 @@
 
   &__icon-star {
     margin-right: 0.5rem;
+
+    @include media(phone-medium) {
+      font-size: 0.8rem;
+    }
+
+    @include media(phone-350) {
+      font-size: 0.5rem;
+    }
   }
 
   &__icon-location {
@@ -247,17 +333,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include media(phone) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: -0.3rem;
+
+    @include media(phone) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: 0.9rem;
     text-transform: uppercase;
+
+    @include media(phone) {
+      font-size: 0.5rem;
+    }
   }
 }
 
@@ -308,8 +406,15 @@
   flex-wrap: wrap;
 
   &__item {
+    display: flex;
+    align-items: center;
     flex: 0 0 50%;
     margin-bottom: 0.7rem;
+    font-size: 1.4rem;
+
+    @include media(phone-350) {
+      font-size: 1.2rem;
+    }
 
     &__icon {
       color: var(--color-primary);
@@ -327,8 +432,16 @@
   display: flex;
   align-items: center;
 
+  @include media(phone-350) {
+    font-size: 1.1rem;
+  }
+
   &__count {
     margin-right: auto;
+  }
+
+  &__friends {
+    display: flex;
   }
 
   &__photo {
@@ -337,6 +450,16 @@
     width: 3.25rem;
     border-radius: 50%;
     border: 0.3rem solid #fff;
+
+    @include media(phone-415) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    @include media(phone-350) {
+      height: 2.25rem;
+      width: 2.25rem;
+    }
 
     &:not(:last-child) {
       margin-right: -1.5rem;
@@ -352,6 +475,11 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+
+  @include media(tab) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &__text {
     margin-bottom: 2rem;
@@ -410,11 +538,19 @@
   padding: 3.5rem 0;
   text-align: center;
 
+  @include media(tab) {
+    padding: 2.5rem 0;
+  }
+
   &__book-now {
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
+
+    @include media(phone-medium) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -446,5 +582,157 @@
   &:active {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+  }
+}
+
+// HOME      //////////////////////////////////////////////////////////
+
+//Features //
+
+.home-features .overview__heading {
+  margin: 3rem;
+}
+
+.box-section {
+  background-color: var(--color-primary-light);
+  padding: 4.5rem;
+}
+
+.col-lg-4 {
+  display: flex;
+}
+
+.features-card {
+  border-radius: 1rem;
+  padding: 2rem 5rem;
+  background-color: white;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  &:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.6);
+  }
+}
+
+.features__icon-box {
+  padding: 2rem 0;
+}
+
+.features-icon {
+  font-size: 4.5rem;
+  color: var(--color-primary-light);
+}
+
+.features__title {
+  padding-bottom: 1rem;
+
+  &-header {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+}
+
+.features__paragraph {
+  padding-bottom: 2rem;
+
+  &-text {
+    color: var(--color-grey-dark-3);
+    font-size: 1.5rem;
+  }
+}
+
+// RECOMMENDED HOTELS //
+
+.recommended-hotels {
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+}
+
+.card {
+  border-radius: 1rem;
+  border-color: transparent;
+
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.4s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+
+  &:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.6);
+  }
+
+  &-img-top {
+    height: 20rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 2rem;
+  }
+
+  &-rating {
+    background-color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    color: var(--color-grey-light-1);
+  }
+
+  &-stars {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  &-price-text {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  &-price {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: -1.5rem;
+
+    &-number {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+}
+
+// Footer ////////////////////////////////////////////////
+.footer-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item {
+  margin-right: 1.8rem;
+  font-size: 2rem;
+  transition: all 0.4s;
+
+  &:hover {
+    color: var(--color-primary-light);
+    cursor: pointer;
+    transform: translateY(-0.2rem);
   }
 }

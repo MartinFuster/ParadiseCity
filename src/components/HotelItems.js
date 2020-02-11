@@ -2,16 +2,7 @@ import React from "react";
 import Item from "./Item";
 
 function HotelItems(props) {
-  const items = [
-    "Close to the beach",
-    "Free airport shuttle",
-    "Air conditioning and heating",
-    "Modern Gym",
-    "Breakfast included",
-    "Free wifi in all rooms",
-    "Pets allowed",
-    "Perfect for families"
-  ];
+  const items = props.items;
 
   return (
     <ul className="list">
