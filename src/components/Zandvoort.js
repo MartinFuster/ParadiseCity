@@ -31,29 +31,37 @@ function Zandvoort() {
         <Nav />
         <div className="hotel-view">
           <div className="gallery">
-            <FigureImage img={img1} alt="" />
-
-            <FigureImage img={img2} alt="" />
-
-            <FigureImage img={img3} alt="" />
+            <div className="image-container">
+              <FigureImage img={img1} alt="" />
+            </div>
+            <div className="image-container">
+              <FigureImage img={img2} alt="" />
+            </div>
+            <div className="image-container">
+              <FigureImage img={img3} alt="" />
+            </div>
           </div>
           <div className="overview">
             <HotelName hotel="NH Zandvoort" />
             <Stars stars="4" />
-            <Location location="Amsterdam, Netherlands" />
+            <Location
+              location="Amsterdam, Netherlands"
+              href="https://www.google.com/maps/place/Zandvoort,+Pa%C3%ADses+Bajos/@52.3810687,4.5187477,13z/data=!3m1!4b1!4m5!3m4!1s0x47c5ec1179ffa9b7:0x2410fe010d2f3dbc!8m2!3d52.3711487!4d4.533355"
+            />
             <Rating rating="7.4" votes="49" />
           </div>
           <div className="detail">
             <div className="description">
               <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                nisi dignissimos debitis ratione sapiente saepe. Accusantium
-                cumque, quas, ut corporis incidunt deserunt quae architecto
-                voluptate.
+                Located only 150 m from the sandy beach in Zandvoort, this hotel
+                offers rooms with free Wi-Fi and cable TV. NH Zandvoort features
+                spa facilities.
               </p>
               <p className="paragraph">
-                Accusantium cumque, quas, ut corporis incidunt deserunt quae
-                architecto voluptate delectus, inventore iure aliquid aliquam.
+                A mini-bar and tea/coffee making facilities are provided as
+                standard in the rooms at NH Zandvoort Hotel. Each room also
+                includes a seating area and a bathroom with both a bath and
+                shower.
               </p>
               <HotelItems items={items} />
 
@@ -61,15 +69,15 @@ function Zandvoort() {
             </div>
             <div className="user-reviews">
               <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-        doloremque architecto dicta animi, totam, itaque officia ex."
+                review="The bed was amazing, and the staff were so friendly. 
+                I would definitely recommend it to my friends and family!"
                 name="Maximilian Berger"
                 date="Jan 26, 2020"
                 rating="8.2"
               />
               <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-        doloremque architecto dicta animi."
+                review="The location and price. And also that a bus stop was directly across the street from the hotel. This made it 
+                easy for us to get around because at the time we stayed taxi's we're very limited."
                 name="Mateo Fernandez"
                 date="Nov, 2019"
                 rating="9.2"
@@ -78,7 +86,7 @@ function Zandvoort() {
             </div>
           </div>
           <CTA
-            heading="Good news! we have 1 rooms left for you"
+            heading="Good news! we have 1 room left for you"
             buttonText="Book now"
           />
         </div>

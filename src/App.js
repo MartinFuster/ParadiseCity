@@ -33,6 +33,7 @@ import {
 import AqueenLavender from "./components/AqueenLavender";
 import BurjAlArab from "./components/BurjAlArab";
 import IstanbulGold from "./components/IstanbulGold";
+import ScrollToTop from "./components/ScrollToTop";
 
 library.add(
   faEnvelope,
@@ -60,6 +61,7 @@ library.add(
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <Switch>
           <Route path="/" exact component={Home} />

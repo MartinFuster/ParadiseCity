@@ -17,13 +17,14 @@ function Description() {
   return (
     <div className="description">
       <p className="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi
-        dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut
-        corporis incidunt deserunt quae architecto voluptate.
+        The Las Palmas hotel is a modern 5 star hotel located in Avenida da
+        Liberdade. its exclusively for non smokers and offers room service, 24hs
+        open reception and rooms with air conditioning, free Wi-Fi connection
+        and minibar.
       </p>
       <p className="paragraph">
-        Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto
-        voluptate delectus, inventore iure aliquid aliquam.
+        The rooms in Las Palmas Hotel are docorated in natural tones with modern
+        furniture and disposes smart Tvs and private bathrooms with big mirrors.
       </p>
       <HotelItems items={items} />
       <Recommend name="Lucy" likes="3" />

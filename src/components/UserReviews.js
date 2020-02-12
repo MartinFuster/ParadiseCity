@@ -6,18 +6,19 @@ function UserReview() {
   return (
     <div className="user-reviews">
       <Review
-        review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-        doloremque architecto dicta animi, totam, itaque officia ex."
+        review="Everything was perfect. Personnel very friendly and helpful. 
+        Walking distance to stores and restaurants. Great"
         name="Nick Smith"
         date="Jan 17, 2020"
-        rating="7.8"
+        rating="9.1"
       />
       <Review
-        review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-        doloremque architecto dicta animi."
+        review="Very comfortable and practical. Really good location to everything. 
+        Right beside a metro that is 4 stops away from the city centre. Very nice walk to the 
+        city centre as well, just 25mins."
         name="Ashley Rawson"
         date="Dec 4, 2019"
-        rating="9.1"
+        rating="7.8"
       />
       <InlineButton text="Show all" />
     </div>

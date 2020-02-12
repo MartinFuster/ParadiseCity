@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import Header from "./Header";
-import img1 from "../img/lavender.jpg";
+import img1 from "../img/lavender-bed.jpg";
 import img2 from "../img/lavender-2.jpg";
 import img3 from "../img/lavender-4.jpg";
 import FigureImage from "./FigureImage";
@@ -30,29 +30,36 @@ function AqueenLavender() {
         <Nav />
         <div className="hotel-view">
           <div className="gallery">
-            <FigureImage img={img1} alt="" />
-
-            <FigureImage img={img2} alt="" />
-
-            <FigureImage img={img3} alt="" />
+            <div className="image-container">
+              <FigureImage img={img1} alt="" />
+            </div>
+            <div className="image-container">
+              <FigureImage img={img2} alt="" />
+            </div>
+            <div className="image-container">
+              <FigureImage img={img3} alt="" />
+            </div>
           </div>
           <div className="overview">
-            <HotelName hotel="NH Zandvoort" />
-            <Stars stars="4" />
-            <Location location="Amsterdam, Netherlands" />
+            <HotelName hotel="Aqueen Lavender" />
+            <Stars stars="3" />
+            <Location
+              location="Singapore, Singapore"
+              href="https://www.google.com/maps/place/Aqueen+Hotel+Lavender/@1.3123613,103.8589768,17z/data=!3m1!4b1!4m8!3m7!1s0x31da19ceb349a161:0x7fea18be143402ed!5m2!4m1!1i2!8m2!3d1.3123613!4d103.8611655"
+            />
             <Rating rating="9.2" votes="29" />
           </div>
           <div className="detail">
             <div className="description">
               <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                nisi dignissimos debitis ratione sapiente saepe. Accusantium
-                cumque, quas, ut corporis incidunt deserunt quae architecto
-                voluptate.
+                Aqueen Hotel Lavender is located next to a variety of shops and
+                eateries in vibrant Little India. The hotel offers
+                well-appointed rooms with a 32-inch flat-screen TV and free
+                Wi-Fi.
               </p>
               <p className="paragraph">
-                Accusantium cumque, quas, ut corporis incidunt deserunt quae
-                architecto voluptate delectus, inventore iure aliquid aliquam.
+                Aqueen Hotel Lavender is 500 m from City Square Mall. Mustafa
+                Center, a 24-hour shopping mall, is 701 m from the hotel.
               </p>
               <HotelItems items={items} />
 
@@ -60,15 +67,16 @@ function AqueenLavender() {
             </div>
             <div className="user-reviews">
               <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-        doloremque architecto dicta animi, totam, itaque officia ex."
+                review="I walked through the neighborhood during the day and the night and
+                 I never felt unsafe. The neighborhood did get a bit loud Friday/Saturday night but 
+                 that is because it is close to some fabulous restaurants and bars. I did ask the attendant 
+                 for a suggestion to a business and she was quick and friendly with the info."
                 name="Lukas Rolsky"
                 date="Feb 1, 2020"
                 rating="9.8"
               />
               <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-        doloremque architecto dicta animi."
+                review="Amazing location and clean rooms ! Comfortable beds"
                 name="Connor Dolsk"
                 date="Feb 9, 2020"
                 rating="8.6"

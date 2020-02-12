@@ -29,29 +29,37 @@ function IstanbulGold() {
         <Nav />
         <div className="hotel-view">
           <div className="gallery">
-            <FigureImage img={img1} alt="" />
-
-            <FigureImage img={img2} alt="" />
-
-            <FigureImage img={img3} alt="" />
+            <div className="image-container">
+              <FigureImage img={img1} alt="" />
+            </div>
+            <div className="image-container">
+              <FigureImage img={img2} alt="" />
+            </div>
+            <div className="image-container">
+              <FigureImage img={img3} alt="" />
+            </div>
           </div>
           <div className="overview">
             <HotelName hotel="Istanbul Gold" />
             <Stars stars="3" />
-            <Location location="Baku, Azerbaijan" />
+            <Location
+              location="Baku, Azerbaijan"
+              href="https://www.google.com/maps/place/Istanbul+Gold+Baku+Hotel/@40.3976613,49.8389744,17z/data=!3m1!4b1!4m8!3m7!1s0x40307d64f1a4097f:0xbcbbd6706f1edeff!5m2!4m1!1i2!8m2!3d40.3976613!4d49.8411631"
+            />
             <Rating rating="6.8" votes="16" />
           </div>
           <div className="detail">
             <div className="description">
               <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                nisi dignissimos debitis ratione sapiente saepe. Accusantium
-                cumque, quas, ut corporis incidunt deserunt quae architecto
-                voluptate.
+                Istanbul Gold Hotel features a rooftop restaurant, an on-site
+                café and spacious rooms with free WiFi and a flat-screen TV. It
+                is 10 minutes’ drive from Topkapi and Blue Mosque.
               </p>
               <p className="paragraph">
-                Accusantium cumque, quas, ut corporis incidunt deserunt quae
-                architecto voluptate delectus, inventore iure aliquid aliquam.
+                All rooms have a modern décor which includes carpeted floors and
+                deluxe bedding. Each one is air-conditioned and has TV with
+                satellite channels and comfortable armchairs in the seating
+                area.
               </p>
               <HotelItems items={items} />
 
@@ -59,15 +67,15 @@ function IstanbulGold() {
             </div>
             <div className="user-reviews">
               <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-        doloremque architecto dicta animi, totam, itaque officia ex."
+                review="Beautiful views, especially from the top floor restaurant. 
+                Clean room and friendly staff."
                 name="Ying lu"
                 date="oct 6, 2019"
                 rating="7.3"
               />
               <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-        doloremque architecto dicta animi."
+                review="It was ok but just one thing is not acceptable for me. The Hotel did not serve bottle of water 
+                and tea in room and I have to go to floor 0 for them."
                 name="Pedro Lomber"
                 date="nov 3, 2019"
                 rating="5.4"

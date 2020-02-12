@@ -8,7 +8,9 @@ function Location(props) {
         icon="map-marker-alt"
         className="overview__icon-location"
       />
-      <button className="btn-inline">{props.location}</button>
+      <a className="btn-inline" target="_blank" href={props.href}>
+        {props.location}
+      </a>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../img/hotel-1.jpg";
 import img2 from "../img/zandvoort.jpg";
 import img3 from "../img/blue-moon.jpg";
-import img4 from "../img/lavender.jpg";
+import img4 from "../img/lavender-bed.jpg";
 import img5 from "../img/Burj-Al-Arab.jpg";
 import img6 from "../img/istanbul-gold-baku.png";
 import Stars from "./Stars";
@@ -117,7 +117,7 @@ function RecommendedHotels() {
                 <h5 className="card-title u-center-text">Aqueen Lavender</h5>
                 <p className="card-text">
                   <div className="card-stars">
-                    <Stars stars={stars2} />
+                    <Stars stars={stars3} />
                   </div>
                 </p>
                 <p className="card-text">

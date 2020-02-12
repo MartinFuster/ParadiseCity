@@ -234,12 +234,15 @@ body {
 figure {
   margin: 0; }
 
+.image-container {
+  width: 100%; }
+
 .gallery {
   display: flex; }
   .gallery__photo {
     width: 100%;
     height: 22.5rem;
-    display: block; }
+    object-fit: cover; }
 
 .overview {
   display: flex;
@@ -318,9 +321,12 @@ figure {
       .overview__rating-count {
         font-size: 0.5rem; } }
 
-.btn-inline {
+.btn-inline,
+.btn-inline:visited,
+.btn-inline:link {
   border: none;
-  color: var(--color-primary);
+  text-decoration: none;
+  color: var(--color-primary) !important;
   font-size: inherit;
   border-bottom: 0.1rem solid currentColor;
   padding-bottom: 0.2rem;
@@ -328,14 +334,22 @@ figure {
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s; }
-  .btn-inline span {
+  .btn-inline span,
+  .btn-inline:visited span,
+  .btn-inline:link span {
     margin-left: 0.5rem;
     transition: margin-left 0.2s; }
-  .btn-inline:hover {
-    color: var(--color-grey-dark-1); }
-    .btn-inline:hover span {
+  .btn-inline:hover,
+  .btn-inline:visited:hover,
+  .btn-inline:link:hover {
+    color: var(--color-grey-dark-1) !important; }
+    .btn-inline:hover span,
+    .btn-inline:visited:hover span,
+    .btn-inline:link:hover span {
       margin-left: 1rem; }
-  .btn-inline__arrow {
+  .btn-inline__arrow,
+  .btn-inline:visited__arrow,
+  .btn-inline:link__arrow {
     font-size: 1rem; }
 
 .paragraph:not(:last-of-type) {
@@ -468,6 +482,7 @@ figure {
   transition: all 0.3s; }
   .btn:hover {
     transform: translateY(-0.3rem);
+    color: #fff;
     box-shadow: 0 0.7rem 0.7rem rgba(0, 0, 0, 0.3); }
   .btn:active {
     transform: translateY(-0.1rem);
@@ -576,6 +591,9 @@ figure {
     color: var(--color-primary-light);
     cursor: pointer;
     transform: translateY(-0.2rem); }
+
+.modal-body {
+  padding: 0; }
 
 .header {
   height: 10rem;
