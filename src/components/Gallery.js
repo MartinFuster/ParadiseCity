@@ -6,6 +6,7 @@ import img3 from "../img/hotel-3.jpg";
 import Popup from "./Popup";
 
 function Gallery() {
+  const images = [img1, img2, img3];
   return (
     <div className="gallery">
       <div
@@ -15,14 +16,22 @@ function Gallery() {
       >
         <FigureImage img={img1} alt="" />
       </div>
-      <div className="image-container">
+      <div
+        className="image-container"
+        data-toggle="modal"
+        data-target="#exampleModalCenter"
+      >
         <FigureImage img={img2} alt="" />
       </div>
-      <div className="image-container">
+      <div
+        className="image-container"
+        data-toggle="modal"
+        data-target="#exampleModalCenter"
+      >
         <FigureImage img={img3} alt="" />
       </div>
 
-      <Popup />
+      <Popup images={images} />
     </div>
   );
 }

@@ -3,13 +3,14 @@ import React from "react";
 import img1 from "../img/hotel-1.jpg";
 import img2 from "../img/hotel-2.jpg";
 import img3 from "../img/hotel-3.jpg";
+import { faImages } from "@fortawesome/free-solid-svg-icons";
 
 function Popup(props) {
   return (
     <div
       className="modal fade"
       id="exampleModalCenter"
-      tabindex="-1"
+      tabIndex="-1"
       role="dialog"
       aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true"
@@ -26,15 +27,29 @@ function Popup(props) {
               data-ride="carousel"
             >
               <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img src={img1} className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src={img2} className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src={img3} className="d-block w-100" alt="..." />
-                </div>
+                {props.images.map((image, index) => {
+                  if (index === 0) {
+                    return (
+                      <div key={index} className="carousel-item active">
+                        <img
+                          src={image}
+                          className="d-block w-100 popup__photo"
+                          alt="..."
+                        />
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <div key={index} className="carousel-item">
+                        <img
+                          src={image}
+                          className="d-block w-100 popup__photo"
+                          alt="..."
+                        />
+                      </div>
+                    );
+                  }
+                })}
               </div>
               <a
                 className="carousel-control-prev"

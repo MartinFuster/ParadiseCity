@@ -1,11 +1,14 @@
 import React from "react";
 import logo from "../img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="logo" className="logo" />
+      <Link to="/">
+        <img src={logo} alt="logo" className="logo" />
+      </Link>
       <form action="#" className="search">
         <input
           type="text"

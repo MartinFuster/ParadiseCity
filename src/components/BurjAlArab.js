@@ -14,6 +14,7 @@ import Recommend from "./Recommend";
 import Review from "./Review";
 import InlineButton from "./InlineButton";
 import CTA from "./CTA";
+import Popup from "./Popup";
 
 function BurjAlArab() {
   const items = [
@@ -25,6 +26,7 @@ function BurjAlArab() {
     "Free wifi",
     "Family friendly"
   ];
+  const images = [img1, img2, img3];
   return (
     <section className="aqueen-lavender">
       <Header />
@@ -32,15 +34,29 @@ function BurjAlArab() {
         <Nav />
         <div className="hotel-view">
           <div className="gallery">
-            <div className="image-container">
+            <div
+              className="image-container"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
               <FigureImage img={img1} alt="" />
             </div>
-            <div className="image-container">
+            <div
+              className="image-container"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
               <FigureImage img={img2} alt="" />
             </div>
-            <div className="image-container">
+            <div
+              className="image-container"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
               <FigureImage img={img3} alt="" />
             </div>
+
+            <Popup images={images} />
           </div>
           <div className="overview">
             <HotelName hotel="Burj Al Arab" />
