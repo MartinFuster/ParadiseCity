@@ -1,31 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function SidenavLi(props) {
-  function handleSelection(event) {
-    event.preventDefault();
-    const id = event.target.id;
-    const clickedElement = document.getElementById(id);
-    const navItems = document.getElementsByClassName("side-nav__link");
-    for (let i = 0; i < navItems.length; i++) {
-      navItems[i].classList.remove("side-nav__selected");
-    }
-
-    clickedElement.classList.add("side-nav__selected");
-  }
-
   return (
-    <li className="side-nav__item">
-      <a
-        href={props.href}
-        className={props.className}
-        id={props.id}
-        onClick={handleSelection}
-      >
-        <FontAwesomeIcon icon={props.icon} className="side-nav__icon" />
-        <span>{props.name}</span>
-      </a>
-    </li>
+    <Link to={props.path} className="u-no-text-decoration">
+      <li className="side-nav__item">
+        <a href={props.href} className={props.className} id={props.id}>
+          <FontAwesomeIcon icon={props.icon} className="side-nav__icon" />
+          <span>{props.name}</span>
+        </a>
+      </li>
+    </Link>
   );
 }
 

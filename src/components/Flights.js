@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "./Header";
-import Nav from "./Nav";
+import HeaderFlights from "./HeaderFlights";
+import NavFlights from "./NavFlights";
 import Features from "./Features";
 import RecommendedHotels from "./RecommendedHotels";
 import Documentation from "./documentation";
 
-function Home() {
+function Flights() {
   return (
     <section className="home">
-      <Header />
+      <HeaderFlights />
       <div className="content">
-        <Nav />
+        <NavFlights />
         <div className="hotel-view">
           <div className="home-features">
             <h1 className="overview__heading u-center-text">
@@ -18,18 +18,7 @@ function Home() {
             </h1>
           </div>
           <Features />
-          <div className="home-features">
-            <h1 className="overview__heading u-center-text">
-              Offers you cannot miss
-            </h1>
-          </div>
-          <RecommendedHotels />
 
-          <div className="home-features">
-            <h1 className="overview__heading u-center-text">
-              What you will need to start
-            </h1>
-          </div>
           <Documentation />
         </div>
       </div>
@@ -37,4 +26,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Flights;

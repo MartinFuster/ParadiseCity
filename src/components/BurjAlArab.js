@@ -15,6 +15,7 @@ import Review from "./Review";
 import InlineButton from "./InlineButton";
 import CTA from "./CTA";
 import Popup from "./Popup";
+import { Link } from "react-router-dom";
 
 function BurjAlArab() {
   const items = [
@@ -60,7 +61,7 @@ function BurjAlArab() {
           </div>
           <div className="overview">
             <HotelName hotel="Burj Al Arab" />
-            <Stars stars="7" />
+            <Stars stars="5" />
             <Location
               location="Dubai, United Arab Emirates"
               href="https://www.google.com/maps/place/Burj+Al+Arab+Jumeirah+-+Jumeirah+Street+-+Dub%C3%A1i+-+Emiratos+%C3%81rabes+Unidos/@1.3123613,103.8589768,17z/data=!4m5!3m4!1s0x3e5f6a576414cf2d:0xb3da71b879f0e038!8m2!3d25.141303!4d55.1853429"
@@ -104,7 +105,9 @@ function BurjAlArab() {
                 date="Feb 13, 2020"
                 rating="10"
               />
-              <InlineButton text="Show all" />
+              <Link to="/burj-al-arab/comments">
+                <InlineButton text="Show all" />
+              </Link>
             </div>
           </div>
           <CTA

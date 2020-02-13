@@ -445,6 +445,10 @@ figure {
   .review__rating {
     font-size: 2rem;
     color: var(--color-primary-light); }
+    .review__rating-comment {
+      font-size: 2rem;
+      color: var(--color-primary-light);
+      margin-left: auto; }
   .review::before {
     content: "\201C";
     position: absolute;
@@ -455,6 +459,36 @@ figure {
     color: var(--color-grey-light-2);
     font-family: sans-serif;
     z-index: 1; }
+
+.review__comment {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  font-size: 1.8rem;
+  margin-bottom: 3.5rem;
+  margin-top: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+  .review__comment::before {
+    content: "\201C";
+    position: absolute;
+    top: -3rem;
+    left: -1rem;
+    line-height: 1;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 1; }
+
+.user-reviews__comment {
+  padding: 0 10rem; }
+
+.comment__container {
+  padding: 10rem;
+  display: flex; }
 
 .cta {
   padding: 3.5rem 0;
@@ -669,3 +703,6 @@ figure {
 
 .u-center-text {
   text-align: center !important; }
+
+.u-no-text-decoration {
+  text-decoration: none !important; }

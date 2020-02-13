@@ -195,6 +195,7 @@
     color: var(--color-grey-light-1);
     text-decoration: none;
     text-transform: uppercase;
+
     padding: 1.5rem 3rem;
     position: relative;
     z-index: 10;
@@ -530,6 +531,12 @@ figure {
   &__rating {
     font-size: 2rem;
     color: var(--color-primary-light);
+
+    &-comment {
+      font-size: 2rem;
+      color: var(--color-primary-light);
+      margin-left: auto;
+    }
   }
 
   &::before {
@@ -543,6 +550,41 @@ figure {
     font-family: sans-serif;
     z-index: 1;
   }
+}
+
+.review__comment {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  font-size: 1.8rem;
+  margin-bottom: 3.5rem;
+  margin-top: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -3rem;
+    left: -1rem;
+    line-height: 1;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 1;
+  }
+}
+
+.user-reviews__comment {
+  padding: 0 10rem;
+}
+
+.comment__container {
+  padding: 10rem;
+  display: flex;
 }
 
 // CALL TO ACTION

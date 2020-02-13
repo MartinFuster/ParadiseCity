@@ -15,6 +15,7 @@ import Review from "./Review";
 import InlineButton from "./InlineButton";
 import CTA from "./CTA";
 import Popup from "./Popup";
+import { Link } from "react-router-dom";
 
 function AqueenLavender() {
   const items = [
@@ -97,7 +98,9 @@ function AqueenLavender() {
                 date="Feb 9, 2020"
                 rating="8.6"
               />
-              <InlineButton text="Show all" />
+              <Link to="/aqueen-lavender/comments">
+                <InlineButton text="Show all" />
+              </Link>
             </div>
           </div>
           <CTA

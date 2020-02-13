@@ -8,7 +8,7 @@ function Nav() {
       <ul className="side-nav">
         <SidenavLI
           href=""
-          className="side-nav__link side-nav__selected"
+          className="side-nav__link"
           id="hotels"
           icon="home"
           name="Hotels"
@@ -16,7 +16,7 @@ function Nav() {
         />
         <SidenavLI
           href=""
-          className="side-nav__link"
+          className="side-nav__link side-nav__selected"
           id="flights"
           icon="plane-departure"
           name="Flights"

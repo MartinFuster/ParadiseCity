@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-import Content from "./components/Content";
-import Header from "./components/Header";
 import Home from "./components/Home";
 import BlueMoon from "./components/BlueMoon";
 import LasPalmas from "./components/LasPalmas";
@@ -34,6 +32,13 @@ import AqueenLavender from "./components/AqueenLavender";
 import BurjAlArab from "./components/BurjAlArab";
 import IstanbulGold from "./components/IstanbulGold";
 import ScrollToTop from "./components/ScrollToTop";
+import LasPalmasComments from "./components/LasPalmasComments";
+import BlueMoonComments from "./components/BlueMoonComments";
+import ZandvoortComments from "./components/ZandvoortComments";
+import AqueenLavenderComments from "./components/AqueenLavenderComments";
+import BurjAlArabComments from "./components/BurjAlArabComments";
+import IstanbulGoldComments from "./components/IstanbulGoldComments";
+import Flights from "./components/Flights";
 
 library.add(
   faEnvelope,
@@ -65,12 +70,25 @@ function App() {
       <div>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/las-palmas" component={LasPalmas} />
-          <Route path="/blue-moon" component={BlueMoon} />
-          <Route path="/zandvoort" component={Zandvoort} />
-          <Route path="/aqueen-lavender" component={AqueenLavender} />
-          <Route path="/burj-al-arab" component={BurjAlArab} />
-          <Route path="/istanbul-gold" component={IstanbulGold} />
+          <Route path="/flights" exact component={Flights} />
+          <Route path="/las-palmas" exact component={LasPalmas} />
+          <Route path="/las-palmas/comments" component={LasPalmasComments} />
+          <Route path="/blue-moon" exact component={BlueMoon} />
+          <Route path="/blue-moon/comments" component={BlueMoonComments} />
+          <Route path="/zandvoort" exact component={Zandvoort} />
+          <Route path="/zandvoort/comments" component={ZandvoortComments} />
+          <Route path="/aqueen-lavender" exact component={AqueenLavender} />
+          <Route
+            path="/aqueen-lavender/comments"
+            component={AqueenLavenderComments}
+          />
+          <Route path="/burj-al-arab" exact component={BurjAlArab} />
+          <Route path="/burj-al-arab/comments" component={BurjAlArabComments} />
+          <Route path="/istanbul-gold" exact component={IstanbulGold} />
+          <Route
+            path="/istanbul-gold/comments"
+            component={IstanbulGoldComments}
+          />
         </Switch>
       </div>
     </Router>

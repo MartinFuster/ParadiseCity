@@ -1,6 +1,7 @@
 import React from "react";
 import Review from "./Review";
 import InlineButton from "./InlineButton";
+import { Link } from "react-router-dom";
 
 function UserReview() {
   return (
@@ -20,7 +21,9 @@ function UserReview() {
         date="Dec 4, 2019"
         rating="7.8"
       />
-      <InlineButton text="Show all" />
+      <Link to="/las-palmas/comments">
+        <InlineButton text="Show all" />
+      </Link>
     </div>
   );
 }

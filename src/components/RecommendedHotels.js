@@ -147,7 +147,7 @@ function RecommendedHotels() {
                 <h5 className="card-title u-center-text">Burj Al Arab</h5>
                 <p className="card-text">
                   <div className="card-stars">
-                    <Stars stars={stars7} />
+                    <Stars stars={stars} />
                   </div>
                 </p>
                 <p className="card-text">

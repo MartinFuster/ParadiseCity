@@ -15,6 +15,7 @@ import Review from "./Review";
 import InlineButton from "./InlineButton";
 import CTA from "./CTA";
 import Popup from "./Popup";
+import { Link } from "react-router-dom";
 
 function BlueMoon() {
   const items = [
@@ -95,7 +96,9 @@ function BlueMoon() {
                 date="Feb 7, 2020"
                 rating="5.3"
               />
-              <InlineButton text="Show all" />
+              <Link to="/blue-moon/comments">
+                <InlineButton text="Show all" />
+              </Link>
             </div>
           </div>
           <CTA

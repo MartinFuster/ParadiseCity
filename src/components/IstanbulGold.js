@@ -15,6 +15,7 @@ import Review from "./Review";
 import InlineButton from "./InlineButton";
 import CTA from "./CTA";
 import Popup from "./Popup";
+import { Link } from "react-router-dom";
 
 function IstanbulGold() {
   const items = [
@@ -96,7 +97,9 @@ function IstanbulGold() {
                 date="nov 3, 2019"
                 rating="5.4"
               />
-              <InlineButton text="Show all" />
+              <Link to="/istanbul-gold/comments">
+                <InlineButton text="Show all" />
+              </Link>
             </div>
           </div>
           <CTA

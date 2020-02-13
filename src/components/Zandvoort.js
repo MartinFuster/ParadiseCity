@@ -15,6 +15,7 @@ import Review from "./Review";
 import InlineButton from "./InlineButton";
 import CTA from "./CTA";
 import Popup from "./Popup";
+import { Link } from "react-router-dom";
 
 function Zandvoort() {
   const items = [
@@ -23,7 +24,8 @@ function Zandvoort() {
     "Modern Gym",
     "Breakfast included",
     "Free wifi",
-    "Family friendly"
+    "Family friendly",
+    "Dogs allowed"
   ];
   const images = [img1, img2, img3];
   return (
@@ -62,7 +64,7 @@ function Zandvoort() {
             <Stars stars="4" />
             <Location
               location="Amsterdam, Netherlands"
-              href="https://www.google.com/maps/place/Zandvoort,+Pa%C3%ADses+Bajos/@52.3810687,4.5187477,13z/data=!3m1!4b1!4m5!3m4!1s0x47c5ec1179ffa9b7:0x2410fe010d2f3dbc!8m2!3d52.3711487!4d4.533355"
+              href="https://www.google.com/maps/place/NH+Zandvoort/@52.3810687,4.5187477,13z/data=!4m18!1m9!2m8!1sHoteles!3m6!1sHoteles!2sZandvoort,+Pa%C3%ADses+Bajos!3s0x47c5ec1179ffa9b7:0x2410fe010d2f3dbc!4m2!1d4.533355!2d52.3711487!3m7!1s0x47c5ec3c26d5210d:0x754366a6b25f21da!5m2!4m1!1i2!8m2!3d52.3842391!4d4.5335408"
             />
             <Rating rating="7.4" votes="49" />
           </div>
@@ -95,10 +97,12 @@ function Zandvoort() {
                 review="The location and price. And also that a bus stop was directly across the street from the hotel. This made it 
                 easy for us to get around because at the time we stayed taxi's we're very limited."
                 name="Mateo Fernandez"
-                date="Nov, 2019"
+                date="Nov 10, 2019"
                 rating="9.2"
               />
-              <InlineButton text="Show all" />
+              <Link to="/zandvoort/comments">
+                <InlineButton text="Show all" />
+              </Link>
             </div>
           </div>
           <CTA
