@@ -17,6 +17,28 @@ function Flights() {
               Pick Paradise City for your trips!
             </h1>
           </div>
+          <div className="container">
+            <form action="#" className="search">
+              <div className="search-container">
+                <span className="search-indicator-mobile">Departure</span>
+                <input
+                  type="text"
+                  className="search-input-text-mobile"
+                  placeholder="Enter your origin"
+                />
+                <span className="search-indicator">Arrival</span>
+                <input
+                  type="text"
+                  className="search-input-text"
+                  placeholder="Enter your destination"
+                />
+                <span className="search-indicator">&nbsp;</span>
+                <button type="submit" className="btn-small">
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
           <Features />
 
           <Documentation />

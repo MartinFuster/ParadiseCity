@@ -8,6 +8,22 @@
   font-size: 1.4rem;
 }
 
+.nav-mobile {
+  position: fixed;
+  bottom: 0;
+  background-color: #1b1a1a;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+
+  @include media(tab) {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .content {
   display: flex;
   background-color: #fff;

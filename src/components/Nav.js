@@ -14,14 +14,6 @@ function Nav() {
           name="Hotels"
           path="/"
         />
-        <SidenavLI
-          href=""
-          className="side-nav__link"
-          id="flights"
-          icon="plane-departure"
-          name="Flights"
-          path="/flights"
-        />
       </ul>
       <Copyright />
     </nav>
