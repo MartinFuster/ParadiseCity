@@ -9,7 +9,6 @@ function IstanbulGoldComments() {
     <section className="las-palmas-comments">
       <Header />
       <div className="content">
-        <Nav />
         <div className="hotel-view">
           <div className="home-features">
             <h1 className="overview__heading u-center-text">Reviews</h1>

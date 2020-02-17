@@ -29,7 +29,6 @@ function BlueMoon() {
     <section className="blue-moon">
       <Header />
       <div className="content">
-        <Nav />
         <div className="hotel-view">
           <div className="gallery">
             <div

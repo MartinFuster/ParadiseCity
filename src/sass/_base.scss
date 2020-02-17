@@ -42,6 +42,12 @@ tab = < 900px
 phone = < 600px
 */
 @mixin media($breakpoint) {
+  @if $breakpoint == tab-port-big {
+    @media only screen and (max-width: 61.9375em) {
+      @content;
+      //991px
+    }
+  }
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 60.375em) {
       @content;
@@ -107,7 +113,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @include media(tab-port) {
+  @include media(tab-port-big) {
     font-size: 50%;
   }
 

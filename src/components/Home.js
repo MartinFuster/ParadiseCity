@@ -6,6 +6,7 @@ import RecommendedHotels from "./RecommendedHotels";
 import Documentation from "./documentation";
 import NavbarBootstrap from "./NavbarBootstrap";
 import NavbarMobile from "./NavbarMobile";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
             </h1>
           </div>
           <Documentation />
+          <Footer />
         </div>
       </div>
     </section>

@@ -32,7 +32,6 @@ function Zandvoort() {
     <section className="zandvoort">
       <Header />
       <div className="content">
-        <Nav />
         <div className="hotel-view">
           <div className="gallery">
             <div

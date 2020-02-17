@@ -5,7 +5,6 @@ import Main from "./Main";
 function Content() {
   return (
     <div className="content">
-      <Nav />
       <Main />
     </div>
   );

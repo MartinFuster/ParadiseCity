@@ -29,7 +29,6 @@ function IstanbulGold() {
     <section className="aqueen-lavender">
       <Header />
       <div className="content">
-        <Nav />
         <div className="hotel-view">
           <div className="gallery">
             <div
