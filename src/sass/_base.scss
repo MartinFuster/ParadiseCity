@@ -90,6 +90,13 @@ phone = < 600px
     }
   }
 
+  @if $breakpoint == medium-big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+      //1800px
+    }
+  }
+
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 143.75em) {
       @content;
@@ -115,6 +122,10 @@ html {
 
   @include media(tab-port-big) {
     font-size: 50%;
+  }
+
+  @include media(medium-big-desktop) {
+    font-size: 100%;
   }
 
   @include media(big-desktop) {

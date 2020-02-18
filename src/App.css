@@ -51,6 +51,9 @@ html {
   @media only screen and (max-width: 61.9375em) {
     html {
       font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 100%; } }
   @media only screen and (min-width: 143.75em) {
     html {
       font-size: 120%; } }
@@ -722,17 +725,22 @@ figure {
   align-items: center;
   justify-content: center; }
 
-.footer-item {
-  margin-right: 1.8rem;
+.footer-item,
+.footer-item:link,
+.footer-item:visited {
+  margin-right: 1rem;
+  text-decoration: none;
   font-size: 2.5rem;
   transition: all 0.4s;
   list-style: none;
   display: inline-block;
   color: var(--color-grey-light-4); }
-  .footer-item:hover {
+  .footer-item:hover,
+  .footer-item:link:hover,
+  .footer-item:visited:hover {
     color: var(--color-primary-light);
     cursor: pointer;
-    transform: translateY(-0.2rem); }
+    transform: translateY(-0.1rem); }
 
 .copyright-box {
   display: flex;
@@ -755,6 +763,10 @@ figure {
 @media only screen and (max-width: 61.9375em) {
   .container {
     max-width: 50rem; } }
+
+@media only screen and (min-width: 112.5em) {
+  .container {
+    max-width: 130rem; } }
 
 .header {
   height: 10rem;

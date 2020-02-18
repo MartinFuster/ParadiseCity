@@ -3,6 +3,9 @@
   @include media(tab-port-big) {
     max-width: 50rem;
   }
+  @include media(medium-big-desktop) {
+    max-width: 130rem;
+  }
 }
 .header {
   height: 10rem;
