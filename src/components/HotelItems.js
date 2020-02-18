@@ -6,8 +6,8 @@ function HotelItems(props) {
 
   return (
     <ul className="list">
-      {items.map(content => (
-        <Item item={content} />
+      {items.map((content, index) => (
+        <Item key={index} item={content} />
       ))}
     </ul>
   );

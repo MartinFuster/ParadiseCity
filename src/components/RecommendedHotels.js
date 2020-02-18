@@ -15,32 +15,31 @@ function RecommendedHotels() {
 
   const stars3 = 3;
 
-  const stars7 = 7;
   return (
     <section className="recommended-hotels">
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
-            <div class="card">
+            <div className="card">
               <img src={img1} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title u-center-text">Las Palmas</h5>
-                <p className="card-text">
+                <span className="card-text">
                   <div className="card-stars">
                     <Stars stars={stars} />
                   </div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-rating ">8.6</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price-text">Final price per person</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price ">
                     $<span className="card-price-number">199</span>/day
                   </div>
-                </p>
+                </span>
                 <div className="u-center-text">
                   <Link to="las-palmas" className="btn btn-primary">
                     Book Now
@@ -51,26 +50,26 @@ function RecommendedHotels() {
           </div>
 
           <div className="col-lg-4">
-            <div class="card">
+            <div className="card">
               <img src={img3} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title u-center-text">Blue Moon</h5>
-                <p className="card-text">
+                <span className="card-text">
                   <div className="card-stars">
                     <Stars stars={stars3} />
                   </div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-rating ">6.1</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price-text">Final price per person</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price ">
                     $<span className="card-price-number">54</span>/day
                   </div>
-                </p>
+                </span>
                 <div className="u-center-text">
                   <Link to="blue-moon" className="btn btn-primary">
                     Book Now
@@ -81,26 +80,26 @@ function RecommendedHotels() {
           </div>
 
           <div className="col-lg-4">
-            <div class="card">
+            <div className="card">
               <img src={img2} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title u-center-text">NH Zandvoort</h5>
-                <p className="card-text">
+                <span className="card-text">
                   <div className="card-stars">
                     <Stars stars={stars2} />
                   </div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-rating ">7.4</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price-text">Final price per person</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price ">
                     $<span className="card-price-number">139</span>/day
                   </div>
-                </p>
+                </span>
                 <div className="u-center-text">
                   <Link to="zandvoort" className="btn btn-primary">
                     Book Now
@@ -111,26 +110,26 @@ function RecommendedHotels() {
           </div>
 
           <div className="col-lg-4">
-            <div class="card">
+            <div className="card">
               <img src={img4} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title u-center-text">Aqueen Lavender</h5>
-                <p className="card-text">
+                <span className="card-text">
                   <div className="card-stars">
                     <Stars stars={stars3} />
                   </div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-rating ">9.2</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price-text">Final price per person</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price ">
                     $<span className="card-price-number">179</span>/day
                   </div>
-                </p>
+                </span>
                 <div className="u-center-text">
                   <Link to="aqueen-lavender" className="btn btn-primary">
                     Book Now
@@ -141,26 +140,26 @@ function RecommendedHotels() {
           </div>
 
           <div className="col-lg-4">
-            <div class="card">
+            <div className="card">
               <img src={img5} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title u-center-text">Burj Al Arab</h5>
-                <p className="card-text">
+                <span className="card-text">
                   <div className="card-stars">
                     <Stars stars={stars} />
                   </div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-rating ">10</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price-text">Final price per person</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price ">
                     $<span className="card-price-number">999</span>/day
                   </div>
-                </p>
+                </span>
                 <div className="u-center-text">
                   <Link to="burj-al-arab" className="btn btn-primary">
                     Book Now
@@ -171,26 +170,26 @@ function RecommendedHotels() {
           </div>
 
           <div className="col-lg-4">
-            <div class="card">
+            <div className="card">
               <img src={img6} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title u-center-text">Istanbul Gold</h5>
-                <p className="card-text">
+                <span className="card-text">
                   <div className="card-stars">
                     <Stars stars={stars3} />
                   </div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-rating ">6.8</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price-text">Final price per person</div>
-                </p>
-                <p className="card-text">
+                </span>
+                <span className="card-text">
                   <div className="card-price ">
                     $<span className="card-price-number">69</span>/day
                   </div>
-                </p>
+                </span>
                 <div className="u-center-text">
                   <Link to="istanbul-gold" className="btn btn-primary">
                     Book Now

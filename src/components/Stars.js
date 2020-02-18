@@ -5,7 +5,9 @@ function Stars(props) {
   const stars = [];
   const amountOfStars = props.stars;
   for (let i = 0; i < amountOfStars; i++) {
-    stars.push(<FontAwesomeIcon icon="star" className="overview__icon-star" />);
+    stars.push(
+      <FontAwesomeIcon icon="star" className="overview__icon-star" key={i} />
+    );
   }
   return <div className="overview__stars">{stars}</div>;
 }

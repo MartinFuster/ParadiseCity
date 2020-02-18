@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "./Nav";
 import Header from "./Header";
 import img1 from "../img/istanbul-gold-baku.png";
 import img2 from "../img/istanbul-gold-baku-2.jpg";

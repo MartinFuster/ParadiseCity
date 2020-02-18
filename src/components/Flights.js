@@ -2,7 +2,6 @@ import React from "react";
 import HeaderFlights from "./HeaderFlights";
 import NavFlights from "./NavFlights";
 import Features from "./Features";
-import RecommendedHotels from "./RecommendedHotels";
 import Documentation from "./documentation";
 
 function Flights() {

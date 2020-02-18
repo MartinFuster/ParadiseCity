@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "./Nav";
 import Header from "./Header";
 import img1 from "../img/zandvoort.jpg";
 import img2 from "../img/zandvoort-2.jpg";

@@ -11,24 +11,35 @@ function Footer() {
         <li className="footer-item">
           <a
             href="mailto:martinfuster3@gmail.com"
-            class="far fa-envelope footer-item"
-          ></a>
+            className="footer-item"
+            aria-label="email"
+          >
+            <i className="far fa-envelope"></i>
+          </a>
         </li>
 
         <li className="footer-item">
           <a
             href="https://www.instagram.com/mrtinfuster/"
-            className="fab fa-instagram footer-item"
+            className="footer-item"
             target="_blank"
-          ></a>
+            rel="noopener noreferrer"
+            aria-label="email"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
         </li>
 
         <li className="footer-item">
           <a
             href="https://www.linkedin.com/in/martin-fuster-7b1b381a2/"
-            class="fab fa-linkedin-in footer-item"
+            className="footer-item"
             target="_blank"
-          ></a>
+            rel="noopener noreferrer"
+            aria-label="email"
+          >
+            <i className="fab fa-linkedin-in"></i>
+          </a>
         </li>
       </ul>
       <div className="copyright-box">

@@ -4,12 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 function Header() {
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
   return (
     <header className="header">
       <Link to="/">
         <img src={logo} alt="logo" className="logo" />
       </Link>
-      <form action="#" className="search">
+      <form action="#" className="search" onSubmit={handleSubmit}>
         <input
           type="text"
           className="search__input"

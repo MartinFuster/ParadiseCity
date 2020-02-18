@@ -5,7 +5,7 @@ import BlueMoon from "./components/BlueMoon";
 import LasPalmas from "./components/LasPalmas";
 import Zandvoort from "./components/Zandvoort";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {
   faEnvelope,
   faKey,
@@ -38,7 +38,6 @@ import ZandvoortComments from "./components/ZandvoortComments";
 import AqueenLavenderComments from "./components/AqueenLavenderComments";
 import BurjAlArabComments from "./components/BurjAlArabComments";
 import IstanbulGoldComments from "./components/IstanbulGoldComments";
-import Flights from "./components/Flights";
 
 library.add(
   faEnvelope,
@@ -70,7 +69,6 @@ function App() {
       <div>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/flights" exact component={Flights} />
           <Route path="/las-palmas" exact component={LasPalmas} />
           <Route path="/las-palmas/comments" component={LasPalmasComments} />
           <Route path="/blue-moon" exact component={BlueMoon} />

@@ -110,7 +110,8 @@ body {
     background-color: var(--color-grey-light-3); }
   .search__button {
     border: none;
-    background-color: var(--color-grey-light-2); }
+    background-color: var(--color-grey-light-2);
+    transition: all 0.2s; }
     .search__button:focus {
       outline: none; }
     .search__button:active {

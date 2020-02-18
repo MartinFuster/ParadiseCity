@@ -1,10 +1,5 @@
 import React from "react";
 
-import img1 from "../img/hotel-1.jpg";
-import img2 from "../img/hotel-2.jpg";
-import img3 from "../img/hotel-3.jpg";
-import { faImages } from "@fortawesome/free-solid-svg-icons";
-
 function Popup(props) {
   return (
     <div

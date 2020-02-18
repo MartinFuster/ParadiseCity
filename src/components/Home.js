@@ -1,11 +1,8 @@
 import React from "react";
 import Header from "./Header";
-import Nav from "./Nav";
 import Features from "./Features";
 import RecommendedHotels from "./RecommendedHotels";
 import Documentation from "./documentation";
-import NavbarBootstrap from "./NavbarBootstrap";
-import NavbarMobile from "./NavbarMobile";
 import Footer from "./Footer";
 
 function Home() {

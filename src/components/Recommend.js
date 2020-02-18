@@ -1,5 +1,4 @@
 import React from "react";
-import defaultImage from "../img/no-image-user.png";
 
 function Recommend(props) {
   return (
