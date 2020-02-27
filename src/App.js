@@ -38,6 +38,7 @@ import ZandvoortComments from "./components/ZandvoortComments";
 import AqueenLavenderComments from "./components/AqueenLavenderComments";
 import BurjAlArabComments from "./components/BurjAlArabComments";
 import IstanbulGoldComments from "./components/IstanbulGoldComments";
+import NotFound from "./components/NotFound";
 
 library.add(
   faEnvelope,
@@ -69,6 +70,7 @@ function App() {
       <div>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="*" component={NotFound} />
           <Route path="/las-palmas" exact component={LasPalmas} />
           <Route path="/las-palmas/comments" component={LasPalmasComments} />
           <Route path="/blue-moon" exact component={BlueMoon} />

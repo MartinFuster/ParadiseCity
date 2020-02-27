@@ -959,3 +959,63 @@ figure {
     height: 40rem;
   }
 }
+
+// NOT FOUND /////////////////////////
+
+.error__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  @include media(tab-port-big) {
+    flex-direction: column;
+  }
+}
+
+.error__content {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include media(tab-port-big) {
+    margin-top: 10rem;
+    margin-left: 0;
+  }
+}
+
+.error__image {
+  height: 35rem;
+
+  @include media(tab-port-big) {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 15rem;
+  }
+}
+
+.no-match {
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+}
+
+.big-text {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.btn-black {
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  border-radius: 2rem 0.5rem;
+  background-image: linear-gradient(to right, #717171, #434343);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
