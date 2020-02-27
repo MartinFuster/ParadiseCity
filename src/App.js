@@ -70,7 +70,6 @@ function App() {
       <div>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="*" component={NotFound} />
           <Route path="/las-palmas" exact component={LasPalmas} />
           <Route path="/las-palmas/comments" component={LasPalmasComments} />
           <Route path="/blue-moon" exact component={BlueMoon} />
@@ -89,6 +88,7 @@ function App() {
             path="/istanbul-gold/comments"
             component={IstanbulGoldComments}
           />
+          <Route path="*" component={NotFound} />
         </Switch>
       </div>
     </Router>
